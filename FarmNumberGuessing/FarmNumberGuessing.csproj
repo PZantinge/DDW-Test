@@ -2,11 +2,64 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
   </PropertyGroup>
 
   <PropertyGroup>
     <PackageTargetFallback>$(PackageTargetFallback);portable-net45+win8+wp8+wpa81;</PackageTargetFallback>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\lib\vue\.github\**" />
+    <Compile Remove="wwwroot\lib\vue\benchmarks\**" />
+    <Compile Remove="wwwroot\lib\vue\build\**" />
+    <Compile Remove="wwwroot\lib\vue\examples\**" />
+    <Compile Remove="wwwroot\lib\vue\flow\**" />
+    <Compile Remove="wwwroot\lib\vue\packages\**" />
+    <Compile Remove="wwwroot\lib\vue\test\**" />
+    <Compile Remove="wwwroot\lib\vue\types\**" />
+    <Content Remove="wwwroot\lib\vue\.github\**" />
+    <Content Remove="wwwroot\lib\vue\benchmarks\**" />
+    <Content Remove="wwwroot\lib\vue\build\**" />
+    <Content Remove="wwwroot\lib\vue\examples\**" />
+    <Content Remove="wwwroot\lib\vue\flow\**" />
+    <Content Remove="wwwroot\lib\vue\packages\**" />
+    <Content Remove="wwwroot\lib\vue\test\**" />
+    <Content Remove="wwwroot\lib\vue\types\**" />
+    <EmbeddedResource Remove="wwwroot\lib\vue\.github\**" />
+    <EmbeddedResource Remove="wwwroot\lib\vue\benchmarks\**" />
+    <EmbeddedResource Remove="wwwroot\lib\vue\build\**" />
+    <EmbeddedResource Remove="wwwroot\lib\vue\examples\**" />
+    <EmbeddedResource Remove="wwwroot\lib\vue\flow\**" />
+    <EmbeddedResource Remove="wwwroot\lib\vue\packages\**" />
+    <EmbeddedResource Remove="wwwroot\lib\vue\test\**" />
+    <EmbeddedResource Remove="wwwroot\lib\vue\types\**" />
+    <None Remove="wwwroot\lib\vue\.github\**" />
+    <None Remove="wwwroot\lib\vue\benchmarks\**" />
+    <None Remove="wwwroot\lib\vue\build\**" />
+    <None Remove="wwwroot\lib\vue\examples\**" />
+    <None Remove="wwwroot\lib\vue\flow\**" />
+    <None Remove="wwwroot\lib\vue\packages\**" />
+    <None Remove="wwwroot\lib\vue\test\**" />
+    <None Remove="wwwroot\lib\vue\types\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="package.json" />
+    <Content Remove="wwwroot\lib\vue\.babelrc" />
+    <Content Remove="wwwroot\lib\vue\.editorconfig" />
+    <Content Remove="wwwroot\lib\vue\.eslintignore" />
+    <Content Remove="wwwroot\lib\vue\.eslintrc" />
+    <Content Remove="wwwroot\lib\vue\.flowconfig" />
+    <Content Remove="wwwroot\lib\vue\.gitignore" />
+    <Content Remove="wwwroot\lib\vue\BACKERS.md" />
+    <Content Remove="wwwroot\lib\vue\circle.yml" />
+    <Content Remove="wwwroot\lib\vue\dist\README.md" />
+    <Content Remove="wwwroot\lib\vue\LICENSE" />
+    <Content Remove="wwwroot\lib\vue\package.json" />
+    <Content Remove="wwwroot\lib\vue\README.md" />
+    <Content Remove="wwwroot\lib\vue\yarn.lock" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
     <PackageReference Include="Microsoft.AspNetCore" Version="1.1.2" />
@@ -17,6 +70,13 @@
   </ItemGroup>
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\lib\vue\types\index.d.ts" />
+    <None Include="wwwroot\lib\vue\types\options.d.ts" />
+    <None Include="wwwroot\lib\vue\types\plugin.d.ts" />
+    <None Include="wwwroot\lib\vue\types\vnode.d.ts" />
+    <None Include="wwwroot\lib\vue\types\vue.d.ts" />
   </ItemGroup>
 
 </Project>
