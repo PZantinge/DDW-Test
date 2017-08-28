@@ -14,11 +14,15 @@
                     <label for="age" class="col-4 col-form-label">Age</label>
                     <input type="number" id="age" min="0" class="form-control col-8" v-model="age" />
                 </div>
+                <div class="form-group row">
+                    <label for="number-of-digits" class="col-4 col-form-label">Farmnumber lenght: {{digits}} digits</label>
+                    <input type="range" min="4" max="8" id="number-of-digits" class="form-control col-8" v-model="digits" />
+                </div>
                 <div class="form-group">
                     <input v-show="this.isValid" type="submit" value="Start game" class="btn btn-success" />
                 </div>
             </form>
-            <p v-show="this.age !=='' && this.age >= 0">Hi {{name}}, You were born in {{yearOfBirth}}</p>
+            <p v-show="this.age !== undefined && this.age >= 0">Hi {{name}}, You were born in {{yearOfBirth}}</p>
         </div>
     </div>
 </div>
@@ -34,8 +38,9 @@
         const v = new Vue({
             el: '#app',
             data: {
-                name: "",
-                age: ""
+                name: undefined,
+                age: undefined,
+                digits: 4
             },
             computed: {
                 yearOfBirth: function () {
