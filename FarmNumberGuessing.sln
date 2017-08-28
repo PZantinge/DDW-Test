@@ -1,9 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+VisualStudioVersion = 15.0.26730.10
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FarmNumberGuessing", "FarmNumberGuessing\FarmNumberGuessing.csproj", "{C2CD7154-F6ED-416E-940E-ABEDDE75DAE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FarmNumberGuessing", "FarmNumberGuessing\FarmNumberGuessing.csproj", "{C2CD7154-F6ED-416E-940E-ABEDDE75DAE0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FarmNumberGuessing.Api", "FarmNumberGuessing.Api\FarmNumberGuessing.Api.csproj", "{E6AB99F2-C842-41C2-931A-17B237ECC4DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FarmNumberGuessing.Data", "FarmNumberGuessing.Data\FarmNumberGuessing.Data.csproj", "{1D84EBB1-14D4-47A7-B967-31E048964169}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FarmNumberGuessing.Services", "FarmNumberGuessing.Services\FarmNumberGuessing.Services.csproj", "{4B457626-B994-4A5A-8101-5719FFF0296B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +21,23 @@ Global
 		{C2CD7154-F6ED-416E-940E-ABEDDE75DAE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2CD7154-F6ED-416E-940E-ABEDDE75DAE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2CD7154-F6ED-416E-940E-ABEDDE75DAE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6AB99F2-C842-41C2-931A-17B237ECC4DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6AB99F2-C842-41C2-931A-17B237ECC4DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6AB99F2-C842-41C2-931A-17B237ECC4DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6AB99F2-C842-41C2-931A-17B237ECC4DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D84EBB1-14D4-47A7-B967-31E048964169}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D84EBB1-14D4-47A7-B967-31E048964169}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D84EBB1-14D4-47A7-B967-31E048964169}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D84EBB1-14D4-47A7-B967-31E048964169}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B457626-B994-4A5A-8101-5719FFF0296B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B457626-B994-4A5A-8101-5719FFF0296B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B457626-B994-4A5A-8101-5719FFF0296B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B457626-B994-4A5A-8101-5719FFF0296B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0BAB1883-7CF5-4615-B4CE-F8F679C6AA53}
 	EndGlobalSection
 EndGlobal
